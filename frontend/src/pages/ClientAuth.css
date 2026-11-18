@@ -1,0 +1,237 @@
+
+.client-dashboard {
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+.client-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #172554;
+    color: white;
+}
+
+.client-header button {
+    padding: 10px 20px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.client-content {
+    padding: 40px;
+}
+
+.client-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.client-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.client-card button {
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* COMMON AUTHENTICATION PAGE */
+
+.client-auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+.client-auth-box {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.client-auth-box h1 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.client-auth-box p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* FORM */
+
+.client-auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.client-auth-form label {
+    display: block;
+    color: #334155;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.client-auth-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.client-auth-form input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.12);
+}
+
+/* BUTTON */
+
+.client-auth-form button {
+    width: 100%;
+    padding: 13px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.client-auth-form button:hover {
+    background: #125ca5;
+}
+
+/* LOGIN / REGISTER LINKS */
+
+.client-auth-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #475569;
+}
+
+.client-auth-link a {
+    color: #1976d2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.client-auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* ERROR MESSAGE */
+
+.error-message {
+    color: #dc2626;
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 480px) {
+    .client-auth-box {
+        padding: 25px 18px;
+    }
+
+    .client-auth-box h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+.success-message {
+    color: #15803d;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.client-auth-form button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+
+
+/* CLIENT CLAIM SUBMISSION FORM */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    color: #334155;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.client-card form button {
+    margin: 8px 8px 0 0;
+}
+
+.client-card form button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}

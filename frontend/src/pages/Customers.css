@@ -1,0 +1,266 @@
+
+.customers-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f4f6fb;
+  color: #1e293b;
+}
+
+.customers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.customers-header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.customers-header p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.refresh-btn,
+.add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.customer-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.customer-card h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.customer-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.search-input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.search-input:focus {
+  border-color: #2563eb;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.form-buttons button {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.list-header p {
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.search-input {
+  width: 280px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.customers-table th,
+.customers-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.customers-table th {
+  background: #f8fafc;
+  color: #475569;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.empty-message {
+  text-align: center !important;
+  color: #64748b;
+  padding: 30px !important;
+}
+
+@media (max-width: 700px) {
+  .customers-page {
+    padding: 15px;
+  }
+
+  .customer-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: auto;
+  }
+}
+
+
+
+/* Insurance Policy Form */
+
+.policy-form {
+  margin-top: 25px;
+}
+
+.policy-form h3 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.policy-form .form-group {
+  margin-bottom: 15px;
+}
+
+.policy-form .form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.policy-form .form-group input,
+.policy-form .form-group select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Suggested Plans */
+
+.suggested-plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px 0 20px;
+}
+
+.plan-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  min-width: 220px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.plan-option input {
+  width: auto;
+  margin-top: 5px;
+}
+
+.plan-option:hover {
+  border-color: #2563eb;
+}
+
+.plan-note {
+  margin: 15px 0;
+  color: #666;
+  font-size: 13px;
+}
+
+/* Customer and Policy Action Buttons */
+
+.action-buttons {
+  min-width: 230px;
+}
+
+.action-buttons button {
+  margin: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
